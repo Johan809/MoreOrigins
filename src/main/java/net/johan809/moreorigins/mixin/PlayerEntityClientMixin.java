@@ -8,7 +8,7 @@ import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
 
 @Mixin(PlayerEntity.class)
-public abstract class PlayerClientEntityMixin extends LivingEntity implements SkinOverlayOwner {
+public abstract class PlayerEntityClientMixin extends LivingEntity implements SkinOverlayOwner {
 	protected PlayerClientEntityMixin(EntityType<? extends LivingEntity> entType, World world) {
 		super(entType, world);
 	}
