@@ -10,7 +10,21 @@
   			"is_ambient": false,
       		"show_particles": false,
       		"show_icon": true
-  		}
+  		},
+		"conditions": [
+				{
+					"type": "origins:relative_health",
+					"comparison": "<=",
+					"compare_to": 0.5
+				},
+				{
+					"type": "origins:command",
+					"command": "clear @s minecraft:nether_star 0",
+					"comparison": ">=",
+					"compare_to": 1
+				}
+			]
+		}
 	},
 	"slowness": {
 		"type": "origins:stacking_status_effect",
@@ -23,23 +37,23 @@
   			"is_ambient": false,
       		"show_particles": false,
       		"show_icon": false
-  		}
-	},
-	"condition": {
+  		},
+		"condition": {
 		"type": "origins:and",
 		"conditions": [
-			{
-				"type": "origins:relative_health",
-				"comparison": "<=",
-				"compare_to": 0.5
-			},
-			{
-				"type": "origins:command",
-				"command": "clear @s minecraft:nether_star 0",
-				"comparison": ">=",
-				"compare_to": 1
-			}
-		]
+				{
+					"type": "origins:relative_health",
+					"comparison": "<=",
+					"compare_to": 0.5
+				},
+				{
+					"type": "origins:command",
+					"command": "clear @s minecraft:nether_star 0",
+					"comparison": ">=",
+					"compare_to": 1
+				}
+			]
+		},
 	},
 	"name": "Wither Armor",
 	"description": "The powers of the wither give you a shield of souls that protects you when your life is in danger, however, being active makes you slower than normal."
