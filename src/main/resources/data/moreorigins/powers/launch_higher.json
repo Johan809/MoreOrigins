@@ -1,0 +1,15 @@
+{
+  "type": "origins:launch",
+  "cooldown": 400,
+  "hud_render": {
+    "bar_index": 4
+  },
+  "sound": "minecraft:entity.parrot.fly",
+  "speed": 3.5,
+  "key": {
+    "key": "key.origins.primary_active",
+    "continuous": true
+  },
+  "name": "Wind Blessing",
+  "description": "You can launch yourself towards the sky, reaching a great altitude"
+}

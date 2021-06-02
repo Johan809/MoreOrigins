@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["O O", "ODO", "OOO"],
+  "key": {
+    "O": {
+      "item": "moreorigins:oceanite"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "moreorigins:oceanite_chestplate",
+    "count": 1
+  }
+}

@@ -1,0 +1,21 @@
+{
+ "powers": [
+	  "moreorigins:wither_particles",
+	  "moreorigins:wither_appearance",
+	  "moreorigins:wither_touch",
+	  "moreorigins:wither_skull",
+	  "moreorigins:wither_flight",
+	  "moreorigins:wither_armor",
+	  "moreorigins:wither_immunity",
+	  "moreorigins:fire_immunity",
+	  "origins:nether_spawn",
+	  "moreorigins:smiteable",
+	  "moreorigins:no_food",
+	  "moreorigins:hostile_being"
+ ],
+ "icon": "minecraft:wither_skeleton_skull",
+ "order": 14,
+ "impact": 3,
+ "name": "Witherborne",
+ "description": "Nether beings that possess the power of the Wither within them, are a danger to all life around them."
+}

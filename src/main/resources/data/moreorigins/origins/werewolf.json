@@ -1,0 +1,21 @@
+{
+  "powers": [
+    "moreorigins:wolf_rampage",
+    "moreorigins:life_steal",
+    "moreorigins:chainmail_boost",
+    "origins:cat_vision",
+    "origins:sprint_jump",
+    "origins:climbing",
+    "moreorigins:good_health",
+    "moreorigins:night_monster",
+    "moreorigins:too_hot",
+    "origins:light_armor",
+    "origins:more_exhaustion",
+    "moreorigins:carnivore"
+  ],
+  "icon": "minecraft:wolf_spawn_egg",
+  "order": 11,
+  "impact": 2,
+  "name": "Werewolf",
+  "description": "Werewolves who disguise themselves as humans, revealing their true form and power at night."
+}

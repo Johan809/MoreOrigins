@@ -1,0 +1,141 @@
+{
+  "type": "origins:multiple",
+  "dragon-boosting": {
+    "type": "origins:active_self",
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:add_velocity",
+          "z": 0.8,
+          "space": "local"
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "playsound minecraft:entity.firework_rocket.launch master @s ~ ~ ~ 1 1"
+        }
+      ]
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:fall_flying"
+        },
+        {
+          "type": "origins:equipped_item",
+          "equipment_slot": "chest",
+          "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+              "item": "dragonloot:upgraded_dragon_chestplate"
+            }
+          }
+        }
+      ]
+    },
+    "cooldown": 60,
+    "hud_render": {
+      "should_render": true,
+      "bar_index": 4
+    },
+    "key": {
+      "key": "key.jump",
+      "continuous": false
+    }
+  },
+  "d-armor-boost": {
+    "type": "origins:active_self",
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:play_sound",
+          "sound": "minecraft:entity.generic.drink"
+        },
+        {
+          "type": "origins:equipped_item_action",
+          "equipment_slot": "offhand",
+          "action": {
+            "type": "origins:consume",
+            "amount": 1
+          }
+        },
+        {
+          "type": "origins:apply_effect",
+          "effect": {
+            "effect": "moreorigins:dragonsoul",
+            "duration": 1200
+          }
+        }
+      ]
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:equipped_item",
+          "equipment_slot": "offhand",
+          "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+              "item": "minecraft:dragon_breath"
+            }
+          }
+        },
+        {
+          "type": "origins:equipped_item",
+          "equipment_slot": "head",
+          "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+              "item": "dragonloot:dragon_helmet"
+            }
+          }
+        },
+        {
+          "type": "origins:equipped_item",
+          "equipment_slot": "chest",
+          "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+              "item": "dragonloot:dragon_chestplate"
+            }
+          }
+        },
+        {
+          "type": "origins:equipped_item",
+          "equipment_slot": "legs",
+          "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+              "item": "dragonloot:dragon_leggings"
+            }
+          }
+        },
+        {
+          "type": "origins:equipped_item",
+          "equipment_slot": "feet",
+          "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+              "item": "dragonloot:dragon_boots"
+            }
+          }
+        }
+      ]
+    },
+    "cooldown": 1800,
+    "hud_render": {
+      "should_render": true,
+      "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+      "bar_index": 7
+    },
+    "key": {
+      "key": "key.origins.secondary_active",
+      "continuous": false
+    }
+  },
+  "name": "Dragon Soul",
+  "description": "By wearing the Dragon armor you can unleash the full power of your lineage. \n(Secondary active) Having the Dragon armor set equipped and holding a Dragon Breath bottle on you off-hand you can activate the Dragon Soul Effect, that gives you Strenght 3, Speed 2 and Regeneration 1 for 60s, 90s cooldown. \nHowever, if you have equipped the Upgraded Dragon Chestplate you get the 'Boosting' skill that provide you with a forward boost."
+}

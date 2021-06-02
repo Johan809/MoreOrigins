@@ -1,0 +1,20 @@
+{
+  "powers": [
+    "moreorigins:chainmail_boost",
+    "origins:elytra",
+    "moreorigins:launch_higher",
+    "origins:aerial_combatant",
+    "moreorigins:boosting",
+    "moreorigins:ender_hunter",
+    "origins:light_armor",
+    "origins:more_kinetic_damage",
+    "origins:fresh_air",
+    "moreorigins:more_projectile_dmg",
+    "origins:claustrophobia"
+  ],
+  "icon": "minecraft:elytra",
+  "order": 12,
+  "impact": 2,
+  "name": "High Elytrians",
+  "description": "Superior Elytrians, descendants of the men who invaded the End realm, skilled in the art of flying and sworn enemies of all the inhabitants of the End."
+}

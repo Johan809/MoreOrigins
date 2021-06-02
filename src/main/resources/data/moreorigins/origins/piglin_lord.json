@@ -1,0 +1,22 @@
+{
+  "powers": [
+    "extraorigins:all_that_glitters",
+    "moreorigins:golden_boost",
+    "moreorigins:netherite_bonus",
+    "extraorigins:piglin_neutrality",
+    "extraorigins:crossbow_master",
+    "moreorigins:fire_immunity",
+    "moreorigins:good_health",
+    "moreorigins:carnivore",
+    "origins:nether_spawn",
+    "extraorigins:soul_spooked",
+    "moreorigins:homesick",
+    "origins:burn_in_daylight",
+    "moreorigins:land_legs"
+  ],
+  "icon": "minecraft:netherite_ingot",
+  "order": 10,
+  "impact": 3,
+  "name": "Piglin Lord",
+  "description": "Ancient piglins, whose power surpasses their predecessors."
+}

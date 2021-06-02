@@ -1,0 +1,23 @@
+{
+  "type": "origins:modify_damage_taken",
+  "damage_condition": {
+    "type": "origins:or",
+    "conditions": [
+      {
+        "type": "origins:name",
+        "name": "explosion"
+      },
+      {
+        "type": "origins:name",
+        "name": "explosion.player"
+      }
+    ]
+  },
+  "modifier": {
+    "name": "Main weakness",
+    "operation": "multiply_base",
+    "value": 0.5
+  },
+  "name": "Main weakness",
+  "description": "Your race is more vulnerable to explosive damage, watch out for Creepers!"
+}

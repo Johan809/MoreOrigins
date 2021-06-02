@@ -1,0 +1,8 @@
+{
+	"type": "origins:modify_player_spawn",
+	"dimension": "minecraft:overworld",
+	"biome": "minecraft:warm_ocean",
+	"spawn_strategy": "center",
+	"name": "Ocean inhabitant",
+	"description": "Being a acuatic being, the ocean is your home."
+}

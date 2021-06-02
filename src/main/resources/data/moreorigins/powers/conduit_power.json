@@ -1,0 +1,35 @@
+{
+	"type": "origins:stacking_status_effect",
+	"min_stacks": -10,
+  	"max_stacks": 360,
+  	"duration_per_stack": 20,
+  	"effects":[
+  		{
+  			"effect": "minecraft:resistance",
+  			"amplifier": 1,
+  			"is_ambient": true,
+	      	"show_particles": false,
+	      	"show_icon": false
+  		},
+  		{
+  			"effect": "minecraft:regeneration",
+  			"amplifier": 1,
+  			"is_ambient": true,
+  			"show_particles": false,
+  			"show_icon": false
+  		},
+  		{
+  			"effect": "minecraft:haste",
+  			"amplifier": 1,
+  			"is_ambient": true,
+  			"show_particles": false,
+  			"show_icon": false
+  		}
+  	],
+  	"condition":{
+  		"type":"origins:status_effect",
+  		"effect": "minecraft:conduit_power"
+  	},
+	"name": "True Ocean Power",
+	"description": "Conduits have a different effect on you, taking you to another level."
+}

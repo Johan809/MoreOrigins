@@ -1,0 +1,26 @@
+{
+  "powers": [
+    "moreorigins:ocean_spawn",
+    "moreorigins:poseidon-armor",
+    "moreorigins:riptide",
+    "moreorigins:conduit_power",
+    "moreorigins:inv_trident",
+    "origins:water_breathing",
+    "origins:swim_speed",
+    "moreorigins:water_vision",
+    "origins:like_water",
+    "moreorigins:guardian_hunter",
+    "origins:aqua_affinity",
+    "extraorigins:flammable",
+    "moreorigins:hot_climates",
+    "moreorigins:fish_only",
+    "origins:conduit_power_on_land",
+    "origins:air_from_potions",
+    "origins:aquatic"
+  ],
+  "icon": "moreorigins:oceanite",
+  "order": 13,
+  "impact": 3,
+  "name": "Atlantean",
+  "description": "Descendants of the god Poseidon himself, the Atlanteans rule the seas with their great power."
+}

@@ -1,0 +1,14 @@
+{
+	"type": "origins:multiple",
+	"modify_size": {
+		"type": "extraorigins:modify_size",
+		"scale": 1.2,
+	},
+	"modify_color": {
+		"type": "origins:model_color",
+		"red": 0.2,
+		"green": 0.2,
+		"blue": 0.2
+	},
+	"hidden": true
+}

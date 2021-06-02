@@ -1,0 +1,19 @@
+{
+  "type": "origins:stacking_status_effect",
+  "min_stacks": 1,
+  "max_stacks": 5,
+  "duration_per_stack": 30,
+  "effect": {
+    "effect": "slowness",
+    "amplifier": 1,
+    "is_ambient": true,
+    "show_particles": false,
+    "show_icon": false
+  },
+  "condition": {
+    "type": "extraorigins:piglin_safe",
+    "inverted": false
+  },
+  "name": "Not suitable for the Nether",
+  "description": "Being the Nether very hot, it makes you very tired and gaining slowness 2."
+}

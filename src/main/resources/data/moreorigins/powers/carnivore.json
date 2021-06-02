@@ -1,0 +1,47 @@
+{
+  "type": "origins:prevent_item_use",
+  "item_condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:or",
+        "conditions": [
+          {
+            "type": "origins:ingredient",
+            "ingredient": {
+              "tag": "origins:meat"
+            }
+          },
+          {
+            "type": "origins:meat"
+          },
+          {
+            "type": "origins:ingredient",
+            "ingredient": {
+              "item": "minecraft:golden_apple"
+            }
+          },
+          {
+            "type": "origins:ingredient",
+            "ingredient": {
+              "item": "minecraft:enchanted_golden_apple"
+            }
+          }
+        ],
+        "inverted": true
+      },
+      {
+        "type": "origins:food"
+      },
+      {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "tag": "origins:ignore_diet"
+        },
+        "inverted": true
+      }
+    ]
+  },
+  "name": "Carnivore",
+  "description": "Your diet is based solely on meat, although with some golden exceptions..."
+}

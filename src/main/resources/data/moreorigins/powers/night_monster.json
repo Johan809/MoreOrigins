@@ -1,0 +1,9 @@
+{
+  "type": "origins:simple",
+  "condition": {
+    "type": "origins:daytime",
+    "inverted": true
+  },
+  "name": "Night monster",
+  "description": "At night, the villagers fear you and the golems attack you at first sight."
+}

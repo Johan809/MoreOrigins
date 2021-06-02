@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.johan809.moreorigins.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+  	"EntityMixin",
+  	"IronGolemEntityMixin",
+  	"PlayerClientEntityMixin",
+  	"PlayerEntityRendererMixin", 
+  	"VillagerEntityMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,37 +1,29 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "moreorigins",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
-  "authors": [
-    "Me!"
-  ],
+  "name": "MoreOrigins",
+  "description": "Mod that adds 5 more Origins: The Piglin Lord, the Werewolf, the Atlantean, the High Elytrian and the EnderDragon Descendant",
+  "authors": ["Johan809"],
   "contact": {
     "homepage": "https://fabricmc.net/",
     "sources": "https://github.com/FabricMC/fabric-example-mod"
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/moreorigins/icon.png",
 
   "environment": "*",
   "entrypoints": {
-    "main": [
-      "net.fabricmc.example.ExampleMod"
-    ]
+    "main": ["net.johan809.moreorigins.MoreOrigins"]
   },
-  "mixins": [
-    "modid.mixins.json"
-  ],
+  "mixins": ["moreorigins.mixins.json"],
 
   "depends": {
     "fabricloader": ">=0.7.4",
     "fabric": "*",
-    "minecraft": "1.16.x"
-  },
-  "suggests": {
-    "another-mod": "*"
+    "minecraft": "1.16.x",
+    "origins": ">=0.6.0"
   }
 }

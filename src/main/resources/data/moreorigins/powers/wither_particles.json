@@ -1,0 +1,6 @@
+{
+	"type": "origins:particle",
+	"particle": "minecraft:basic_smoke_particle",
+	"frequency": 3,
+	"hidden": true
+}
