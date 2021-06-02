@@ -41,7 +41,35 @@ An add-on to the [Origins](https://www.curseforge.com/minecraft/mc-mods/origins)
 > 🔴 **Photoallergic:** You begin to burn in daylight.
 > 
 > 🔴 **Land legs:** Your legs are not suited for the water, and you gain slowness II.
-> 
+
+> ### Werewolf
+>
+> Werewolves who disguise themselves as humans, revealing their true form and power at night.
+>
+> 🟢 **Wolf Rampage:** At night you unleash all the power of the Werewolves, gaining strength, endurance, speed, greater jump and regeneration.
+>
+> 🟢 **Life Steal:** By making a critical hit with an empty hand, you regen some life.
+>
+> 🟢 **Light is better:** Chainmail armor is your favorite and protects you better than the others.
+>
+> 🟢 **Nocturnal:** You can slightly see in the dark when not in water.
+>
+> 🟢 **Strong Ankles:** You are able to jump higher by jumping while sprinting.
+>
+> 🟢 **Climbing:** You are able to climb up any kind of wall, not just ladders.
+>
+> 🟢 **Good Health:** (hidden) You have 3 more hearts.
+>
+> 🟡 **Carnivore:** Your diet is based solely on meat, although with some golden exceptions...
+>
+> 🔴 **Night monster:** At night, the villagers fear you and the golems attack you at first sight.
+>
+> 🔴 **Not suitable for the Nether:** Being the Nether very hot, it makes you very tired and gaining slowness 2.
+>
+> 🔴 **Need for Mobility:** You can not wear any heavy armor (armor with protection values higher than chainmail).
+>
+> 🔴 **Large Appetite:** You exhaust much quicker than others, thus requiring you to eat more.
+
 
 ### Download
 
