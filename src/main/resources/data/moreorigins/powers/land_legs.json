@@ -4,16 +4,16 @@
   "max_stacks": 1,
   "duration_per_stack": 20,
   "effect": {
-      "effect": "minecraft:slowness",
-      "duration": 100,
-      "amplifier": 2,
-      "is_ambient": true,
-      "show_particles": false,
-      "show_icon": true
+    "effect": "minecraft:slowness",
+    "duration": 100,
+    "amplifier": 2,
+    "is_ambient": true,
+    "show_particles": false,
+    "show_icon": true
   },
   "condition": {
-      "type": "origins:submerged_in",
-      "fluid": "minecraft:water"
+    "type": "origins:submerged_in",
+    "fluid": "minecraft:water"
   },
   "name": "Land Legs",
   "description": "Your legs are not suited for the water, and you gain slowness II."

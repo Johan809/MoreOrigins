@@ -1,57 +1,57 @@
 {
-	"type": "origins:multiple",
-	"guardian_killer": {
-		"type": "origins:modify_damage_dealt",
-		"target_condition": {
-			"type": "origins:or",
-			"conditions": [
-				{
-					"type": "origins:entity_type",
-					"entity_type": "minecraft:guardian"
-				},
-				{
-					"type": "origins:entity_type",
-					"entity_type": "minecraft:elder_guardian"
-				}
-			]
-		},
-		"modifier": {
-			"name": "Guardian Hunter",
-			"operation": "multiply_base",
-			"value": 0.30
-		}
-	},
-	"mining_fatigue_immunity":{
-		"type": "origins:effect_immunity",
-		"effect": "minecraft:mining_fatigue"
-	},
-	"guardian_counter": {
-		"type": "origins:modify_damage_taken",
-		"damage_condition": {
-			"type": "origins:or",
-			"conditions": [
-				{
-					"type": "origins:attacker",
-					"entity_condition": {
-						"type": "origins:entity_type",
-        				"entity_type": "minecraft:guardian"		
-					}
-				},
-				{
-					"type": "origins:attacker",
-					"entity_condition": {
-						"type": "origins:entity_type",
-        				"entity_type": "minecraft:elder_guardian"
-					}
-				}
-			]
-		},
-		"modifier": {
-			"name": "Guardian Hunter",
-			"operation": "multiply_base",
-			"value": 0.20
-		}
-	},
-	"name": "Guardian Hunter",
-	"description": "Sworn enemy of the guardians, you are immune to their power and do more damage to them."
+  "type": "origins:multiple",
+  "guardian_killer": {
+    "type": "origins:modify_damage_dealt",
+    "target_condition": {
+      "type": "origins:or",
+      "conditions": [
+        {
+          "type": "origins:entity_type",
+          "entity_type": "minecraft:guardian"
+        },
+        {
+          "type": "origins:entity_type",
+          "entity_type": "minecraft:elder_guardian"
+        }
+      ]
+    },
+    "modifier": {
+      "name": "Guardian Hunter",
+      "operation": "multiply_base",
+      "value": 0.3
+    }
+  },
+  "mining_fatigue_immunity": {
+    "type": "origins:effect_immunity",
+    "effect": "minecraft:mining_fatigue"
+  },
+  "guardian_counter": {
+    "type": "origins:modify_damage_taken",
+    "damage_condition": {
+      "type": "origins:or",
+      "conditions": [
+        {
+          "type": "origins:attacker",
+          "entity_condition": {
+            "type": "origins:entity_type",
+            "entity_type": "minecraft:guardian"
+          }
+        },
+        {
+          "type": "origins:attacker",
+          "entity_condition": {
+            "type": "origins:entity_type",
+            "entity_type": "minecraft:elder_guardian"
+          }
+        }
+      ]
+    },
+    "modifier": {
+      "name": "Guardian Hunter",
+      "operation": "multiply_base",
+      "value": 0.2
+    }
+  },
+  "name": "Guardian Hunter",
+  "description": "Sworn enemy of the guardians, you are immune to their power and do more damage to them."
 }

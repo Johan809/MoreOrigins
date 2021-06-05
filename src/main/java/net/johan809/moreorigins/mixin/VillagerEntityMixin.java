@@ -17,8 +17,6 @@ public class VillagerEntityMixin {
   public void preventTrading(PlayerEntity player, Hand hand, CallbackInfoReturnable<ActionResult> cir) {
     if (PowersRefs.NIGHT_MONSTER.isActive(player)) {
     	cir.setReturnValue(ActionResult.FAIL);
-    } else if(PowersRefs.HOSTILE_BEING.isActive(player)) {
-    	cir.setReturnValue(ActionResult.FAIL);
     }
   }
 }

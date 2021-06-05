@@ -3,9 +3,6 @@ package net.johan809.moreorigins.register;
 import net.johan809.moreorigins.MoreOrigins;
 import net.johan809.moreorigins.items.OceaniteItem;
 import net.johan809.moreorigins.materials.OceaniteArmorMaterial;
-import net.johan809.moreorigins.status.DragonSoulStatusEffect;
-import net.johan809.moreorigins.status.WitherShieldStatusEffect;
-import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.item.*;
 import net.minecraft.item.Item.Settings;
 import net.minecraft.entity.EquipmentSlot;
@@ -15,8 +12,6 @@ import net.minecraft.util.registry.Registry;
 public class GeneralRegister {
     private static final Settings settings = new Item.Settings().group(MoreOrigins.OCEANITE_ARMOR_GROUP);
     
-    public static final StatusEffect DRAGON_SOUL = new DragonSoulStatusEffect();
-    public static final StatusEffect WITHER_SHIELD = new WitherShieldStatusEffect();
     public static final ArmorMaterial OCEANITE_ARMOR_MATERIAL = new OceaniteArmorMaterial();
     
     public static final Item OCEANITE = new OceaniteItem(settings);
@@ -31,7 +26,5 @@ public class GeneralRegister {
         Registry.register(Registry.ITEM, new Identifier(MoreOrigins.MODID, "oceanite_chestplate"), OCEANITE_CHESTPLATE);
         Registry.register(Registry.ITEM, new Identifier(MoreOrigins.MODID, "oceanite_leggings"), OCEANITE_LEGGINGS);
         Registry.register(Registry.ITEM, new Identifier(MoreOrigins.MODID, "oceanite_boots"), OCEANITE_BOOTS);
-        Registry.register(Registry.STATUS_EFFECT, new Identifier(MoreOrigins.MODID, "dragonsoul"), DRAGON_SOUL);
-        Registry.register(Registry.STATUS_EFFECT, new Identifier(MoreOrigins.MODID, "wither_shield"), WITHER_SHIELD);
     }
 }

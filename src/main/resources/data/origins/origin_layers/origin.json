@@ -1,11 +1,9 @@
 {
-	"replace": false,
-	"origins": [
-		"moreorigins:piglin_lord",
-		"moreorigins:werewolf",
-		"moreorigins:high_elytrians",
-		"moreorigins:atlantean",
-		"moreorigins:dragon_descendant",
-		"moreorigins:witherborne"
-	]
+  "replace": false,
+  "origins": [
+    "moreorigins:piglin_lord",
+    "moreorigins:werewolf",
+    "moreorigins:high_elytrians",
+    "moreorigins:atlantean"
+  ]
 }

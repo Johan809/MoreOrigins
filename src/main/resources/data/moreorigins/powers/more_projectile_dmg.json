@@ -1,27 +1,27 @@
 {
-	"type":"origins:modify_damage_taken",
-	"damage_condition": {
-		"type":"origins:or",
-		"conditions": [
-			{
-				"type":"origins:projectile",
-				"projectile":"minecraft:arrow"
-			},
-			{
-				"type":"origins:projectile",
-				"projectile":"minecraft:spectral_arrow"	
-			},
-			{
-				"type":"origins:projectile",
-				"projectile":"minecraft:trident"
-			}
-		]
-	},
-	"modifier": {
-		"name": "Creature from the sky",
-		"operation": "multiply_base",
-		"value": 0.25
-	},
-	"name": "Creature from the sky",
-	"description": "Being a flying being, projectiles tend to do more damage than normal."
+  "type": "origins:modify_damage_taken",
+  "damage_condition": {
+    "type": "origins:or",
+    "conditions": [
+      {
+        "type": "origins:projectile",
+        "projectile": "minecraft:arrow"
+      },
+      {
+        "type": "origins:projectile",
+        "projectile": "minecraft:spectral_arrow"
+      },
+      {
+        "type": "origins:projectile",
+        "projectile": "minecraft:trident"
+      }
+    ]
+  },
+  "modifier": {
+    "name": "Creature from the sky",
+    "operation": "multiply_base",
+    "value": 0.25
+  },
+  "name": "Creature from the sky",
+  "description": "Being a flying being, projectiles tend to do more damage than normal."
 }

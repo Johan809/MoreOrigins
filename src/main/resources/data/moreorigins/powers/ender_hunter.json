@@ -1,31 +1,31 @@
 {
-	"type": "origins:modify_damage_dealt",
-	"target_condition": {
-		"type":"origins:or",
-		"conditions":[
-			{
-				"type": "origins:entity_type",
-				"entity_type": "minecraft:enderman"
-			},
-			{
-				"type":"origins:entity_type",
-				"entity_type": "minecraft:endermite"
-			},
-			{
-				"type":"origins:entity_type",
-				"entity_type": "minecraft:shulker"	
-			},
-			{
-				"type":"origins:entity_type",
-				"entity_type":"minecraft:ender_dragon"
-			}
-		]
-	},
-	"modifier":{
-		"name":"Ender Hunter",
-		"operation": "multiply_base",
-		"value": 0.25
-	},
-	"name":"Ender Hunter",
-	"description": "As a hunter of the inhabitants of the End, you can do more damage to these."
+  "type": "origins:modify_damage_dealt",
+  "target_condition": {
+    "type": "origins:or",
+    "conditions": [
+      {
+        "type": "origins:entity_type",
+        "entity_type": "minecraft:enderman"
+      },
+      {
+        "type": "origins:entity_type",
+        "entity_type": "minecraft:endermite"
+      },
+      {
+        "type": "origins:entity_type",
+        "entity_type": "minecraft:shulker"
+      },
+      {
+        "type": "origins:entity_type",
+        "entity_type": "minecraft:ender_dragon"
+      }
+    ]
+  },
+  "modifier": {
+    "name": "Ender Hunter",
+    "operation": "multiply_base",
+    "value": 0.25
+  },
+  "name": "Ender Hunter",
+  "description": "As a hunter of the inhabitants of the End, you can do more damage to these."
 }

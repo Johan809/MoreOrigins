@@ -77,58 +77,58 @@
     "key": {
       "key": "key.origins.secondary_active",
       "continuous": false
-    }
+    },
     "condition": {
-        "type": "origins:and",
-        "conditions": [
-          {
-            "type": "origins:fluid_height",
-            "fluid": "minecraft:water",
-            "comparison": "==",
-            "compare_to": 0
-          },
-          {
-            "type": "origins:equipped_item",
-            "equipment_slot": "head",
-            "item_condition": {
-              "type": "origins:ingredient",
-              "ingredient": {
-                "item": "moreorigins:oceanite_helmet"
-              }
-            }
-          },
-          {
-            "type": "origins:equipped_item",
-            "equipment_slot": "chest",
-            "item_condition": {
-              "type": "origins:ingredient",
-              "ingredient": {
-                "item": "moreorigins:oceanite_chestplate"
-              }
-            }
-          },
-          {
-            "type": "origins:equipped_item",
-            "equipment_slot": "legs",
-            "item_condition": {
-              "type": "origins:ingredient",
-              "ingredient": {
-                "item": "moreorigins:oceanite_leggings"
-              }
-            }
-          },
-          {
-            "type": "origins:equipped_item",
-            "equipment_slot": "feet",
-            "item_condition": {
-              "type": "origins:ingredient",
-              "ingredient": {
-                "item": "moreorigins:oceanite_boots"
-              }
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:fluid_height",
+          "fluid": "minecraft:water",
+          "comparison": "==",
+          "compare_to": 0
+        },
+        {
+          "type": "origins:equipped_item",
+          "equipment_slot": "head",
+          "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+              "item": "moreorigins:oceanite_helmet"
             }
           }
-        ]
-     }
+        },
+        {
+          "type": "origins:equipped_item",
+          "equipment_slot": "chest",
+          "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+              "item": "moreorigins:oceanite_chestplate"
+            }
+          }
+        },
+        {
+          "type": "origins:equipped_item",
+          "equipment_slot": "legs",
+          "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+              "item": "moreorigins:oceanite_leggings"
+            }
+          }
+        },
+        {
+          "type": "origins:equipped_item",
+          "equipment_slot": "feet",
+          "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+              "item": "moreorigins:oceanite_boots"
+            }
+          }
+        }
+      ]
+    }
   },
   "name": "Poseidon Armor",
   "description": "Special armor used by the god of the sea, when using it you get a superior strength (Use the Oceanite Armor)."

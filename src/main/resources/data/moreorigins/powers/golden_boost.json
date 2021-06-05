@@ -1,62 +1,62 @@
 {
-	"type": "origins:active_self",
-	"entity_action": {
-		"type": "origins:and",
-		"actions": [
-			{
-				"type": "origins:play_sound",
-				"sound": "minecraft:entity.generic.burn"
-			},
-			{
-				"type": "origins:equipped_item_action",
-				"equipment_slot": "offhand",
-				"action": {
-			        "type": "origins:consume",
-			        "amount": 1
-			    }
-			},
-			{
-				"type": "origins:apply_effect",
-				"effects": [
-					{
-						"effect": "minecraft:strength",
-						"amplifier": 1,
-						"duration": 600
-					}, 
-					{
-						"effect": "minecraft:resistance",
-						"amplifier": 1,
-						"duration": 600
-					},
-					{
-						"effect": "minecraft:regeneration",
-						"amplifier": 1,
-						"duration": 600
-					}
-				]
-			}
-		]
-	},
-	"condition":{
-		"type": "origins:equipped_item",
-		"equipment_slot": "offhand",
-	    "item_condition": {
-	    	"type": "origins:ingredient",
-	    	"ingredient": {
-	    		"item": "minecraft:gold_block"
-	    	}
-	    }
-	},
-	"cooldown": 1200,
-    "hud_render": {
-        "should_render": true,
-        "sprite_location": "origins:textures/gui/resource_bar.png",
-        "bar_index": 7
-    },
-    "key": {
-        "key": "key.origins.primary_active",
-        "continuous": false
-    },
-    "name": "Golden Sacrifice",
-    "description": "Sacrificing a block of gold in you off-hand gives resistance II, strength II and regeneration II for 30s; cooldown of 60s"
+  "type": "origins:active_self",
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:play_sound",
+        "sound": "minecraft:entity.generic.burn"
+      },
+      {
+        "type": "origins:equipped_item_action",
+        "equipment_slot": "offhand",
+        "action": {
+          "type": "origins:consume",
+          "amount": 1
+        }
+      },
+      {
+        "type": "origins:apply_effect",
+        "effects": [
+          {
+            "effect": "minecraft:strength",
+            "amplifier": 1,
+            "duration": 600
+          },
+          {
+            "effect": "minecraft:resistance",
+            "amplifier": 1,
+            "duration": 600
+          },
+          {
+            "effect": "minecraft:regeneration",
+            "amplifier": 1,
+            "duration": 600
+          }
+        ]
+      }
+    ]
+  },
+  "condition": {
+    "type": "origins:equipped_item",
+    "equipment_slot": "offhand",
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "item": "minecraft:gold_block"
+      }
+    }
+  },
+  "cooldown": 1200,
+  "hud_render": {
+    "should_render": true,
+    "sprite_location": "origins:textures/gui/resource_bar.png",
+    "bar_index": 7
+  },
+  "key": {
+    "key": "key.origins.primary_active",
+    "continuous": false
+  },
+  "name": "Golden Sacrifice",
+  "description": "Sacrificing a block of gold in you off-hand gives resistance II, strength II and regeneration II for 30s; cooldown of 60s"
 }

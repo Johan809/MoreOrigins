@@ -1,9 +1,9 @@
 {
   "type": "origins:fire_immunity",
   "condition": {
-	  "type": "extraorigins:piglin_safe",
-	  "inverted": false
-	},
+    "type": "extraorigins:piglin_safe",
+    "inverted": false
+  },
   "name": "Fiery Skin",
   "description": "You are completely immune to fire and lava, and don't even begin to burn; but only in the Nether."
 }
