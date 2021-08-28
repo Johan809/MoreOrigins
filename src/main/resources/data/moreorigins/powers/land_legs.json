@@ -9,7 +9,7 @@
     "amplifier": 2,
     "is_ambient": true,
     "show_particles": false,
-    "show_icon": true
+    "show_icon": false
   },
   "condition": {
     "type": "origins:submerged_in",

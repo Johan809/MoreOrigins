@@ -1,0 +1,16 @@
+{
+    "type": "origins:action_on_callback",
+    "entity_action_chose": {
+        "type": "origins:execute_command",
+        "command": "give @s minecraft:trident{Enchantments:[{id:\"minecraft:loyalty\",lvl:1s}]}",
+        "permission_level": 4
+    },
+    "entity_action_added": {
+        "type": "origins:execute_command",
+        "command": "give @s minecraft:trident{Enchantments:[{id:\"minecraft:loyalty\",lvl:1s}]}",
+        "permission_level": 4
+    },
+    "execute_chosen_when_orb": true,
+    "name": "Oceanic Weaponry",
+    "description": "As part of the Atlantean civilization, you have a faithful trident as your companion."
+}

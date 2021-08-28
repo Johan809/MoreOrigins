@@ -2,10 +2,9 @@
   "type": "origins:starting_equipment",
   "stack": {
     "item": "minecraft:trident",
-    "tag": "{Enchantments:[{id:loyalty,lvl:1}]}",
-    "slot": 9
+    "tag": "{Enchantments:[{id:loyalty,lvl:1s}]}",
+    "slot": 8
   },
-  "recurrent": true,
   "name": "Oceanic Weaponry",
   "description": "As part of the Atlantean civilization, you have a faithful trident as your companion."
 }

@@ -1,0 +1,35 @@
+{
+    "display": {
+        "title": {
+            "text": "Withering Obliterated"
+        },
+        "description": {
+            "text": "You've finished off the threat of the Wither, for now..."
+        },
+        "icon": {
+            "item": "minecraft:nether_star"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "kill wither": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:wither"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "kill wither"
+        ]
+    ],
+    "rewards": {
+        "experience": 20
+    }
+}
