@@ -1,4 +1,6 @@
-## MoreOrigins
+# MoreOrigins
+
+---
 
 An add-on to the [Origins](https://www.curseforge.com/minecraft/mc-mods/origins) mod. Enables 4 new origins:
 
@@ -90,7 +92,7 @@ An add-on to the [Origins](https://www.curseforge.com/minecraft/mc-mods/origins)
 >
 > Descendants of the god Poseidon himself, the Atlanteans rule the seas with their great power.
 >
-> 🟢 **Poseidon Armor:** Special armor used by the god of the sea, when using it you get a superior strength (Use the Oceanite Armor).
+> 🟢 **Poseidon Armor:** Special armor used by the god of the sea, when using it you get a superior strength: Strength IV and Breathing outside the water(Secondary active) when using full set.
 >
 > 🟢 **Riptide:** You can lauch yourself through the water at high speeds using the primary abiliy key.
 >
@@ -118,11 +120,18 @@ An add-on to the [Origins](https://www.curseforge.com/minecraft/mc-mods/origins)
 >
 > 🔴 **Marine Diet:** You can only eat seafood, but are satiated by seafood more.(fish and kelp, with some golden exceptions...).
 
-### Download
+### Note: 
+I personally recommend using a mod that shows the recipes, like [REI](https://www.curseforge.com/minecraft/mc-mods/roughly-enough-items) in Fabric.
+Oceanite (the base item for Oceanite armor) it's made out of Prismarine Shards (A), Primarine Crystals (B) and Diamonds (C), with the pattern:
+BAB
+ACA
+BAB
+
+## Download
 
 The latest download, `moreorigins-X.X.X.jar`, can be found in the [releases page](https://github.com/Johan809/MoreOrigins/releases).
 
-### Requirements
+## Requirements
 
 - [Fabric loader](https://fabricmc.net/)
 - [Fabric API](https://www.curseforge.com/minecraft/mc-mods/fabric-api)
@@ -130,7 +139,7 @@ The latest download, `moreorigins-X.X.X.jar`, can be found in the [releases page
 - [Extra Origins](https://www.curseforge.com/minecraft/mc-mods/extra-origins)
 - [Pehkui](https://www.curseforge.com/minecraft/mc-mods/pehkui)
 
-### Special Thanks & Credits
+## Special Thanks & Credits
 
 - [Apace100](https://github.com/apace100/origins-fabric): For creating the original Origins mod.
 - [MoriyaShiine](https://github.com/MoriyaShiine/extra-origins): For the Extra Origins mod, it's amazing!
@@ -140,6 +149,6 @@ The latest download, `moreorigins-X.X.X.jar`, can be found in the [releases page
 - [BrotherEarth967 -VE](https://www.planetminecraft.com/texture-pack/netherite-style-armours/): Oceanite Armor base texture is based on his Netherite-like Diamond Armor texture.
 - And all the people from the Origins Discord Server, They are nice people :3
 
-### Source Code
+## Source Code
 
 https://github.com/Johan809/MoreOrigins
