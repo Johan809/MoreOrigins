@@ -21,6 +21,7 @@ public abstract class IronGolemEntityMixin extends GolemEntity {
 
   @Inject(method = "initGoals", at = @At("HEAD"), cancellable = true)
   protected void addEnemyPlayerTracking(CallbackInfo ci) {
-    targetSelector.add(3, new FollowTargetGoal<>(this, PlayerEntity.class, 5, true, false, PowersRefs.NIGHT_MONSTER::isActive));
+    targetSelector.add(3,
+        new FollowTargetGoal<>(this, PlayerEntity.class, 5, true, false, PowersRefs.NIGHT_MONSTER::isActive));
   }
-}       
+}

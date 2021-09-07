@@ -16,7 +16,7 @@ public class VillagerEntityMixin {
   @Inject(method = "interactMob", at = @At(value = "INVOKE"), cancellable = true)
   public void preventTrading(PlayerEntity player, Hand hand, CallbackInfoReturnable<ActionResult> cir) {
     if (PowersRefs.NIGHT_MONSTER.isActive(player)) {
-    	cir.setReturnValue(ActionResult.FAIL);
+      cir.setReturnValue(ActionResult.FAIL);
     }
   }
 }
