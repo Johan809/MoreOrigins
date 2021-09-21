@@ -1,0 +1,17 @@
+{
+  "powers": [
+    "extraorigins:bite_sized",
+    "extraorigins:nimble",
+    "extraorigins:small_appetite",
+    "origins:climbing",
+    "origins:strong_arms",
+    "moreorigins:subterranean",
+    "moreorigins:agoraphobia",
+    "moreorigins:sugar_rush"
+  ],
+  "icon": "anvil",
+  "order": 1,
+  "impact": 3,
+  "name": "Cave Inchling",
+  "description": "Inchling who adapted to living underground, their natural abilities come to the fore in caves."
+}

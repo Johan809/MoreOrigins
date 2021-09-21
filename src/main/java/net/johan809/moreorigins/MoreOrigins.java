@@ -6,6 +6,7 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 import net.johan809.moreorigins.register.GeneralRegister;
+import net.johan809.moreorigins.register.LootRegister;
 
 public class MoreOrigins implements ModInitializer {
 	public static final String MODID = "moreorigins";
@@ -17,5 +18,6 @@ public class MoreOrigins implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		GeneralRegister.register();
+		LootRegister.registerLootTables();
 	}
 }
