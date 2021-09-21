@@ -1,0 +1,37 @@
+{
+  "type": "origins:stacking_status_effect",
+  "min_stacks": -20,
+  "max_stacks": 361,
+  "duration_per_stack": 10,
+  "effects": [
+    {
+      "effect": "minecraft:night_vision",
+      "is_ambient": true,
+      "show_particles": false,
+      "show_icon": false
+    },
+    {
+      "effect": "minecraft:haste",
+      "is_ambient": true,
+      "show_particles": false,
+      "show_icon": false
+    }
+  ],
+  "condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:block_collision",
+        "offset_x": 0,
+        "offset_y": 1,
+        "offset_z": 0
+      },
+      {
+        "type": "origins:exposed_to_sky",
+        "inverted": true
+      }
+    ]
+  },
+  "name": "Subterranean",
+  "description": "When you're underground you get Haste I and Night Vision I."
+}
