@@ -4,8 +4,8 @@
 
 An add-on to the [Origins](https://www.curseforge.com/minecraft/mc-mods/origins) mod. Enables 4 new origins:
 
-> ### Piglin Lord
->
+### Piglin Lord
+
 > Natives of the Nether, Ancient piglins whose power surpasses their predecessors.
 >
 > 🟢 **All That Glitters:** Golden tools deal extra damage and golden armor has additional protection. Golden equipment lasts much longer, but non golden and non netherite equipment breaks faster. Netherite armor gives a small speed boost.
@@ -34,8 +34,8 @@ An add-on to the [Origins](https://www.curseforge.com/minecraft/mc-mods/origins)
 >
 > 🔴 **Land legs:** Your legs are not suited for the water, and you gain slowness II.
 
-> ### Werewolf
->
+### Werewolf
+
 > Werewolves who disguise themselves as humans, revealing their true form and power at night.
 >
 > 🟢 **Wolf Rampage:** At night you unleash all the power of the Werewolves, gaining strength, endurance, speed, greater jump and regeneration.
@@ -62,8 +62,8 @@ An add-on to the [Origins](https://www.curseforge.com/minecraft/mc-mods/origins)
 >
 > 🔴 **Large Appetite:** You exhaust much quicker than others, thus requiring you to eat more.
 
-> ### High Elytrians
->
+### High Elytrians
+
 > Superior Elytrians, descendants of the men who invaded the End realm, skilled in the art of flying and sworn enemies of all the inhabitants of the End.
 >
 > 🟢 **Light is better:** Chainmail armor is your favorite and protects you better than the others.
@@ -88,8 +88,8 @@ An add-on to the [Origins](https://www.curseforge.com/minecraft/mc-mods/origins)
 >
 > 🔴 **Claustrophobia:** Being somewhere with a low ceiling for too long will weaken you and make you slower.
 
-> ### Atlantean
->
+### Atlantean
+
 > Descendants of the god Poseidon himself, the Atlanteans rule the seas with their great power.
 >
 > 🟢 **Poseidon Armor:** Special armor used by the god of the sea, when using it you get a superior strength: Strength IV and Breathing outside the water(Secondary active) when using full set.
@@ -120,7 +120,26 @@ An add-on to the [Origins](https://www.curseforge.com/minecraft/mc-mods/origins)
 >
 > 🔴 **Marine Diet:** You can only eat seafood, but are satiated by seafood more.(fish and kelp, with some golden exceptions...).
 
-### Note: 
+### Cave Inchling
+
+> 🟡 **Bited Size:** You are 4 times smaller than a regular person. You have 5 less hearts, 0.5 more attack speed, 0.25 less attack range, and 1 less build range.
+>
+> 🟢 **Nimble:** You are immune to thorns and velocity based damage. You are not slowed down at all by blocks such as Sweet Berry Bushes or Cobwebs.
+>
+> 🟢 **Small Appetite:** You require less food to keep going.
+>
+> 🟢 **Climbing** You are able to climb up any kind of wall, not just ladders. (Primary Active)
+>
+> 🟢 **Strong Arms:** You are strong enough to break natural stones without using a pickaxe.
+>
+> 🟢 **Subterranean:** When you're underground you get Haste I and Night Vision I.
+>
+> 🟢 **Hyper Active:** Eating sugar gives a speed buff. (Secondary active)
+>
+> 🔴 **Agoraphobia:** Being an underground creature, being outdoors is not very good for you.
+
+### Note:
+
 I personally recommend using a mod that shows the recipes, like [REI](https://www.curseforge.com/minecraft/mc-mods/roughly-enough-items) in Fabric.
 Oceanite (the base item for Oceanite armor) it's made out of Prismarine Shards (A), Primarine Crystals (B) and Diamonds (C), with the pattern:
 BAB

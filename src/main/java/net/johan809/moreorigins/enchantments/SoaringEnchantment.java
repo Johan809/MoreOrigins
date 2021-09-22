@@ -4,8 +4,8 @@ import net.johan809.moreorigins.register.GeneralRegister;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
 import net.minecraft.entity.EquipmentSlot;
-import net.minecraft.item.ElytraItem;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 
 public class SoaringEnchantment extends Enchantment {
 	public SoaringEnchantment(Rarity weight, EnchantmentTarget type, EquipmentSlot[] slotTypes) {
@@ -14,7 +14,7 @@ public class SoaringEnchantment extends Enchantment {
 
 	@Override
 	public boolean isAcceptableItem(ItemStack stack) {
-		return stack.getItem() instanceof ElytraItem;
+		return stack.getItem() == Items.ELYTRA;
 	}
 
 	public int getMaxLevel() {
@@ -33,7 +33,7 @@ public class SoaringEnchantment extends Enchantment {
 		return true;
 	}
 
-	protected boolean canAccept(Enchantment other) {
+	public boolean canAccept(Enchantment other) {
 		return super.canAccept(other) && other != GeneralRegister.WIND_CATCHER_ENCHANTMENT;
 	}
 }

@@ -1,5 +1,25 @@
 {
-  "type": "",
+  "type": "origins:stacking_status_effect",
+  "min_stacks": -20,
+  "max_stacks": 361,
+  "duration_per_stack": 10,
+  "effects": [
+    {
+      "effect": "minecraft:blindness",
+      "is_ambient": true,
+      "show_particles": false,
+      "show_icon": false
+    },
+    {
+      "effect": "minecraft:weakness",
+      "is_ambient": true,
+      "show_particles": false,
+      "show_icon": false
+    }
+  ],
+  "condition": {
+    "type": "origins:exposed_to_sky"
+  },
   "name": "Agoraphobia",
   "description": "Being an underground creature, being outdoors is not very good for you."
 }
