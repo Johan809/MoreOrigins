@@ -12,7 +12,7 @@
     "moreorigins:more_projectile_dmg",
     "origins:claustrophobia"
   ],
-  "icon": "minecraft:elytra",
+  "icon": { "id": "minecraft:elytra" },
   "order": 12,
   "impact": 2,
   "name": "High Elytrians",

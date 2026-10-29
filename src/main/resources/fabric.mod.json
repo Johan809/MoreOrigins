@@ -4,11 +4,12 @@
   "version": "${version}",
 
   "name": "MoreOrigins",
-  "description": "Mod that adds 4 new Origins: The Piglin Lord, the Werewolf, the Atlantean and the High Elytrian.",
+  "description": "Origins add-on with 5 new origins: the Piglin Lord, the Werewolf, the High Elytrian, the Atlantean and the Cave Inchling.",
   "authors": ["Johan809"],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/Johan809/MoreOrigins",
+    "sources": "https://github.com/Johan809/MoreOrigins",
+    "issues": "https://github.com/Johan809/MoreOrigins/issues"
   },
 
   "license": "CC0-1.0",
@@ -21,9 +22,10 @@
   "mixins": ["moreorigins.mixins.json"],
 
   "depends": {
-    "fabricloader": ">=0.7.4",
-    "fabric": "*",
-    "minecraft": "1.16.x",
-    "origins": ">=0.6.0"
+    "fabricloader": ">=0.16.5",
+    "fabric-api": "*",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "origins": ">=1.13.0-"
   }
 }

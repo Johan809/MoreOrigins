@@ -3,10 +3,10 @@
   "chainmail_helmet_boost": {
     "type": "origins:conditioned_attribute",
     "modifier": {
-      "name": "Origin modifier",
-      "attribute": "generic.armor",
-      "value": 1,
-      "operation": "addition"
+      "id": "*:*",
+      "attribute": "minecraft:generic.armor",
+      "amount": 1,
+      "operation": "add_value"
     },
     "condition": {
       "type": "origins:equipped_item",
@@ -22,10 +22,10 @@
   "chainmail_chestplate_boost": {
     "type": "origins:conditioned_attribute",
     "modifier": {
-      "name": "Origin modifier",
-      "attribute": "generic.armor",
-      "value": 2,
-      "operation": "addition"
+      "id": "*:*",
+      "attribute": "minecraft:generic.armor",
+      "amount": 2,
+      "operation": "add_value"
     },
     "condition": {
       "type": "origins:equipped_item",
@@ -38,13 +38,13 @@
       }
     }
   },
-  "chainmail_leggins_boost": {
+  "chainmail_leggings_boost": {
     "type": "origins:conditioned_attribute",
     "modifier": {
-      "name": "Origin modifier",
-      "attribute": "generic.armor",
-      "value": 2,
-      "operation": "addition"
+      "id": "*:*",
+      "attribute": "minecraft:generic.armor",
+      "amount": 2,
+      "operation": "add_value"
     },
     "condition": {
       "type": "origins:equipped_item",
@@ -60,10 +60,10 @@
   "chainmail_boots_boost": {
     "type": "origins:conditioned_attribute",
     "modifier": {
-      "name": "Origin modifier",
-      "attribute": "generic.armor",
-      "value": 1,
-      "operation": "addition"
+      "id": "*:*",
+      "attribute": "minecraft:generic.armor",
+      "amount": 1,
+      "operation": "add_value"
     },
     "condition": {
       "type": "origins:equipped_item",

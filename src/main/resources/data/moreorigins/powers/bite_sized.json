@@ -1,0 +1,37 @@
+{
+  "type": "origins:attribute",
+  "modifiers": [
+    {
+      "id": "*:*",
+      "attribute": "minecraft:generic.scale",
+      "amount": -0.75,
+      "operation": "add_multiplied_total"
+    },
+    {
+      "id": "*:*",
+      "attribute": "minecraft:generic.max_health",
+      "amount": -10,
+      "operation": "add_value"
+    },
+    {
+      "id": "*:*",
+      "attribute": "minecraft:generic.attack_speed",
+      "amount": 0.5,
+      "operation": "add_value"
+    },
+    {
+      "id": "*:*",
+      "attribute": "minecraft:player.entity_interaction_range",
+      "amount": -0.25,
+      "operation": "add_value"
+    },
+    {
+      "id": "*:*",
+      "attribute": "minecraft:player.block_interaction_range",
+      "amount": -1,
+      "operation": "add_value"
+    }
+  ],
+  "name": "Bite Sized",
+  "description": "You are 4 times smaller than a regular person. You have 5 less hearts, 0.5 more attack speed, 0.25 less attack range, and 1 less build range."
+}

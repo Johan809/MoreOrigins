@@ -5,23 +5,23 @@
   "duration_per_stack": 20,
   "effects": [
     {
-      "effect": "minecraft:resistance",
+      "id": "minecraft:resistance",
       "amplifier": 1,
-      "is_ambient": true,
+      "ambient": true,
       "show_particles": false,
       "show_icon": false
     },
     {
-      "effect": "minecraft:regeneration",
+      "id": "minecraft:regeneration",
       "amplifier": 1,
-      "is_ambient": true,
+      "ambient": true,
       "show_particles": false,
       "show_icon": false
     },
     {
-      "effect": "minecraft:haste",
+      "id": "minecraft:haste",
       "amplifier": 1,
-      "is_ambient": true,
+      "ambient": true,
       "show_particles": false,
       "show_icon": false
     }

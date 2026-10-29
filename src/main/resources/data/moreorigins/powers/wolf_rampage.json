@@ -2,36 +2,37 @@
   "type": "origins:stacking_status_effect",
   "min_stacks": 0,
   "max_stacks": 1,
-  "duration_per_stack": 20,
+  "duration_per_stack": 60,
+  "tick_rate": 50,
   "effects": [
     {
-      "effect": "minecraft:strength",
-      "is_ambient": true,
+      "id": "minecraft:strength",
+      "ambient": true,
       "show_particles": true,
       "show_icon": false
     },
     {
-      "effect": "minecraft:resistance",
-      "is_ambient": true,
+      "id": "minecraft:resistance",
+      "ambient": true,
       "show_particles": false,
       "show_icon": false
     },
     {
-      "effect": "minecraft:regeneration",
-      "is_ambient": true,
+      "id": "minecraft:regeneration",
+      "ambient": true,
       "show_particles": false,
       "show_icon": false
     },
     {
-      "effect": "minecraft:speed",
+      "id": "minecraft:speed",
       "amplifier": 1,
-      "is_ambient": true,
+      "ambient": true,
       "show_particles": true,
       "show_icon": false
     },
     {
-      "effect": "minecraft:jump_boost",
-      "is_ambient": true,
+      "id": "minecraft:jump_boost",
+      "ambient": true,
       "show_particles": false,
       "show_icon": false
     }

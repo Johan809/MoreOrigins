@@ -1,0 +1,9 @@
+{
+  "type": "origins:modify_exhaustion",
+  "modifier": {
+    "operation": "multiply_total_multiplicative",
+    "amount": -0.75
+  },
+  "name": "Small Appetite",
+  "description": "You require less food to keep going."
+}

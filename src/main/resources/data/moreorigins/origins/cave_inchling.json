@@ -1,16 +1,17 @@
 {
   "powers": [
-    "extraorigins:bite_sized",
-    "extraorigins:nimble",
-    "extraorigins:small_appetite",
+    "moreorigins:bite_sized",
+    "moreorigins:nimble",
+    "moreorigins:small_appetite",
     "origins:climbing",
     "origins:strong_arms",
+    "origins:strong_arms_break_speed",
     "moreorigins:subterranean",
     "moreorigins:agoraphobia",
     "moreorigins:sugar_rush"
   ],
-  "icon": "minecraft:mossy_cobblestone",
-  "order": 1,
+  "icon": { "id": "minecraft:mossy_cobblestone" },
+  "order": 14,
   "impact": 3,
   "name": "Cave Inchling",
   "description": "Inchling who adapted to living underground, their natural abilities come to the fore in caves."

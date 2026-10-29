@@ -2,11 +2,11 @@
   "required": true,
   "minVersion": "0.8",
   "package": "net.johan809.moreorigins.mixin",
-  "compatibilityLevel": "JAVA_8",
+  "compatibilityLevel": "JAVA_21",
   "mixins": [
     "IronGolemEntityMixin",
-    "VillagerEntityMixin",
-    "LivingEntityMixin"
+    "LivingEntityMixin",
+    "PiglinBrainMixin"
   ],
   "injectors": {
     "defaultRequire": 1

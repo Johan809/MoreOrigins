@@ -5,20 +5,20 @@
   "duration_per_stack": 10,
   "effects": [
     {
-      "effect": "minecraft:night_vision",
-      "is_ambient": true,
+      "id": "minecraft:night_vision",
+      "ambient": true,
       "show_particles": false,
       "show_icon": false
     },
     {
-      "effect": "minecraft:haste",
-      "is_ambient": true,
+      "id": "minecraft:haste",
+      "ambient": true,
       "show_particles": false,
       "show_icon": false
     }
   ],
   "condition": {
-    "type": "origins:and",
+    "type": "origins:all_of",
     "conditions": [
       {
         "type": "origins:block_collision",

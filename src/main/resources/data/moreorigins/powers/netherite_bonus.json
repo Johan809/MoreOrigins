@@ -5,21 +5,21 @@
   "duration_per_stack": 20,
   "effects": [
     {
-      "effect": "minecraft:speed",
-      "is_ambient": true,
+      "id": "minecraft:speed",
+      "ambient": true,
       "show_particles": false,
       "show_icon": false
     },
     {
-      "effect": "minecraft:haste",
+      "id": "minecraft:haste",
       "amplifier": 2,
-      "is_ambient": true,
+      "ambient": true,
       "show_particles": false,
       "show_icon": false
     }
   ],
   "condition": {
-    "type": "origins:and",
+    "type": "origins:all_of",
     "conditions": [
       {
         "type": "origins:equipped_item",

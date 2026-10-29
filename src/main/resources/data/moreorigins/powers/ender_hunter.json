@@ -1,7 +1,7 @@
 {
   "type": "origins:modify_damage_dealt",
   "target_condition": {
-    "type": "origins:or",
+    "type": "origins:any_of",
     "conditions": [
       {
         "type": "origins:entity_type",
@@ -22,9 +22,8 @@
     ]
   },
   "modifier": {
-    "name": "Ender Hunter",
-    "operation": "multiply_base",
-    "value": 0.25
+    "operation": "multiply_base_multiplicative",
+    "amount": 0.25
   },
   "name": "Ender Hunter",
   "description": "As a hunter of the inhabitants of the End, you can do more damage to these."

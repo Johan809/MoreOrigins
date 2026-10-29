@@ -4,8 +4,8 @@
   "max_stacks": 360,
   "duration_per_stack": 10,
   "effect": {
-    "effect": "minecraft:weakness",
-    "is_ambient": true,
+    "id": "minecraft:weakness",
+    "ambient": true,
     "show_particles": false,
     "show_icon": true
   },

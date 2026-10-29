@@ -1,0 +1,22 @@
+{
+  "type": "origins:stacking_status_effect",
+  "min_stacks": 0,
+  "max_stacks": 1,
+  "duration_per_stack": 30,
+  "effect": {
+    "id": "minecraft:weakness",
+    "ambient": true,
+    "show_particles": false,
+    "show_icon": true
+  },
+  "condition": {
+    "type": "origins:block_in_radius",
+    "radius": 8,
+    "block_condition": {
+      "type": "origins:in_tag",
+      "tag": "minecraft:piglin_repellents"
+    }
+  },
+  "name": "Soul Spooked",
+  "description": "You are afraid of Soul Fire, becoming weak when near it."
+}

@@ -1,41 +1,51 @@
 plugins {
-	id 'fabric-loom' version '0.7-SNAPSHOT'
+	id 'fabric-loom' version "${loom_version}"
 	id 'maven-publish'
 }
 
-sourceCompatibility = JavaVersion.VERSION_1_8
-targetCompatibility = JavaVersion.VERSION_1_8
-
-archivesBaseName = project.archives_base_name
 version = project.mod_version
 group = project.maven_group
 
+base {
+	archivesName = project.archives_base_name
+}
+
 repositories {
-    maven {
-        name = "Ladysnake Libs"
-        url = 'https://ladysnake.jfrog.io/artifactory/mods'
-    }
-    maven {
-        url = 'https://maven.cafeteria.dev'
-        content {
-            includeGroup 'net.adriantodt.fabricmc'
-        }
-    }
-    maven {
-        url "https://maven.jamieswhiteshirt.com/libs-release"
-        content {
-            includeGroup "com.jamieswhiteshirt"
-        }
-    }
-    maven {
-        url "https://jitpack.io"
-    }
-    maven {
-        url "https://maven.shedaniel.me/"
-    }
-    maven {
-        url "https://api.modrinth.com/maven"
-    }
+	exclusiveContent {
+		forRepository {
+			maven {
+				name = "Modrinth"
+				url = "https://api.modrinth.com/maven"
+			}
+		}
+		filter {
+			includeGroup "maven.modrinth"
+		}
+	}
+}
+
+configurations {
+	originsJar {
+		transitive = false
+	}
+}
+
+// Origins ships Apoli, Calio, etc. as nested jars, which the dev environment doesn't load,
+// so they get extracted (recursively) and added to the runtime classpath
+def extractNestedJars(File jar, File outDir) {
+	def nested = []
+	new java.util.zip.ZipFile(jar).withCloseable { zip ->
+		zip.entries().findAll { !it.directory && it.name.startsWith("META-INF/jars/") && it.name.endsWith(".jar") }.each { entry ->
+			def target = new File(outDir, entry.name.substring("META-INF/jars/".length()))
+			if (!target.exists()) {
+				target.parentFile.mkdirs()
+				zip.getInputStream(entry).withCloseable { input -> target.bytes = input.bytes }
+			}
+			nested << target
+			nested.addAll(extractNestedJars(target, outDir))
+		}
+	}
+	return nested
 }
 
 dependencies {
@@ -43,45 +53,54 @@ dependencies {
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-	modImplementation "com.github.apace100:origins-fabric:${project.origins_version}"
+
+	// The mod only talks to Origins through data packs, so it is only needed to run the game.
+	// It's also on the compile classpath so Loom remaps Origins and its nested jars against each other
+	originsJar "maven.modrinth:origins:${project.origins_version}"
+	modCompileOnly "maven.modrinth:origins:${project.origins_version}"
+	modLocalRuntime "maven.modrinth:origins:${project.origins_version}"
+	def nestedDir = layout.buildDirectory.dir("origins-nested-jars").get().asFile
+	extractNestedJars(configurations.originsJar.singleFile, nestedDir).each {
+		modCompileOnly files(it)
+		modLocalRuntime files(it)
+	}
 }
 
 processResources {
-	inputs.property "version", project.version
+	def version = project.version
+	inputs.property "version", version
 
 	filesMatching("fabric.mod.json") {
-		expand "version": project.version
+		expand "version": version
 	}
 }
 
 tasks.withType(JavaCompile).configureEach {
 	it.options.encoding = "UTF-8"
-	def targetVersion = 8
-	if (JavaVersion.current().isJava9Compatible()) {
-		 it.options.release = targetVersion
-	}
+	it.options.release = 21
 }
 
 java {
 	withSourcesJar()
+
+	sourceCompatibility = JavaVersion.VERSION_21
+	targetCompatibility = JavaVersion.VERSION_21
 }
 
 jar {
+	def projectName = project.base.archivesName.get()
+	inputs.property "projectName", projectName
+
 	from("LICENSE") {
-		rename { "${it}_${project.archivesBaseName}"}
+		rename { "${it}_$projectName" }
 	}
 	from "README.md"
 }
 
 publishing {
 	publications {
-		mavenJava(MavenPublication) {
-			artifact(remapJar) {
-				builtBy remapJar
-			}
-			artifact(sourcesJar) {
-				builtBy remapSourcesJar
-			}
+		create("mavenJava", MavenPublication) {
+			from components.java
 		}
 	}
 	repositories {}

@@ -1,0 +1,128 @@
+{
+  "type": "origins:multiple",
+  "golden_head_boost": {
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+      "id": "*:*",
+      "attribute": "minecraft:generic.armor",
+      "amount": 1,
+      "operation": "add_value"
+    },
+    "condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "head",
+      "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "tag": "moreorigins:golden_armor"
+        }
+      }
+    }
+  },
+  "golden_chest_boost": {
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+      "id": "*:*",
+      "attribute": "minecraft:generic.armor",
+      "amount": 2,
+      "operation": "add_value"
+    },
+    "condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "chest",
+      "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "tag": "moreorigins:golden_armor"
+        }
+      }
+    }
+  },
+  "golden_legs_boost": {
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+      "id": "*:*",
+      "attribute": "minecraft:generic.armor",
+      "amount": 2,
+      "operation": "add_value"
+    },
+    "condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "legs",
+      "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "tag": "moreorigins:golden_armor"
+        }
+      }
+    }
+  },
+  "golden_feet_boost": {
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+      "id": "*:*",
+      "attribute": "minecraft:generic.armor",
+      "amount": 1,
+      "operation": "add_value"
+    },
+    "condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "feet",
+      "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "tag": "moreorigins:golden_armor"
+        }
+      }
+    }
+  },
+  "golden_mainhand_boost": {
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+      "id": "*:*",
+      "attribute": "minecraft:generic.attack_damage",
+      "amount": 2.5,
+      "operation": "add_value"
+    },
+    "condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "mainhand",
+      "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "tag": "moreorigins:golden_tools"
+        }
+      }
+    }
+  },
+  "golden_armor_unbreaking": {
+    "type": "origins:modify_enchantment_level",
+    "enchantment": "minecraft:unbreaking",
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "moreorigins:golden_armor"
+      }
+    },
+    "modifier": {
+      "operation": "add_base_early",
+      "amount": 3
+    }
+  },
+  "golden_tools_unbreaking": {
+    "type": "origins:modify_enchantment_level",
+    "enchantment": "minecraft:unbreaking",
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "moreorigins:golden_tools"
+      }
+    },
+    "modifier": {
+      "operation": "add_base_early",
+      "amount": 15
+    }
+  },
+  "name": "All That Glitters",
+  "description": "Golden tools deal extra damage and golden armor has additional protection. Golden equipment lasts much longer."
+}

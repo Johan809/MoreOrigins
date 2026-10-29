@@ -5,22 +5,22 @@
   "duration_per_stack": 30,
   "effects": [
     {
-      "effect": "minecraft:slowness",
+      "id": "minecraft:slowness",
       "amplifier": 1,
-      "is_ambient": true,
+      "ambient": true,
       "show_particles": false,
       "show_icon": false
     },
     {
-      "effect": "minecraft:weakness",
-      "is_ambient": true,
+      "id": "minecraft:weakness",
+      "ambient": true,
       "show_particles": false,
       "show_icon": false
     }
   ],
   "condition": {
-    "type": "extraorigins:piglin_safe",
-    "inverted": false
+    "type": "origins:dimension",
+    "dimension": "minecraft:the_nether"
   },
   "name": "Not suitable for the Nether",
   "description": "Being the Nether very hot, it makes you very tired and gaining slowness 2 and weakness 1."

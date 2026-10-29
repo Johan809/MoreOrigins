@@ -1,0 +1,41 @@
+{
+  "type": "origins:multiple",
+  "damage_immunity": {
+    "type": "origins:invulnerability",
+    "damage_condition": {
+      "type": "origins:any_of",
+      "conditions": [
+        {
+          "type": "origins:type",
+          "damage_type": "minecraft:fall"
+        },
+        {
+          "type": "origins:type",
+          "damage_type": "minecraft:fly_into_wall"
+        },
+        {
+          "type": "origins:type",
+          "damage_type": "minecraft:cactus"
+        },
+        {
+          "type": "origins:type",
+          "damage_type": "minecraft:sweet_berry_bush"
+        },
+        {
+          "type": "origins:type",
+          "damage_type": "minecraft:thorns"
+        }
+      ]
+    }
+  },
+  "no_block_slowdown": {
+    "type": "origins:phasing",
+    "render_type": "none",
+    "block_condition": {
+      "type": "origins:in_tag",
+      "tag": "moreorigins:nimble_passable"
+    }
+  },
+  "name": "Nimble",
+  "description": "You are immune to thorns and velocity based damage. You are not slowed down at all by blocks such as Sweet Berry Bushes or Cobwebs."
+}

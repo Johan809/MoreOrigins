@@ -1,45 +1,52 @@
 package net.johan809.moreorigins.mixin;
 
-import org.jetbrains.annotations.Nullable;
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import net.minecraft.item.ItemStack;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentHelper;
-import net.minecraft.entity.attribute.EntityAttribute;
-import net.minecraft.entity.attribute.EntityAttributes;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityType;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
+import net.minecraft.util.math.Vec3d;
+import net.minecraft.world.World;
 import net.johan809.moreorigins.register.GeneralRegister;
-import net.minecraft.entity.attribute.EntityAttributeInstance;
 
 @Mixin(LivingEntity.class)
-public abstract class LivingEntityMixin {
+public abstract class LivingEntityMixin extends Entity {
+	// Extra acceleration along the look direction, per tick and per Soaring level
+	private static final double SOARING_BOOST = 0.004;
+	// Extra drag per tick while Wind Catcher is on
+	private static final double WIND_CATCHER_DRAG = 0.985;
 
-	@Shadow
-	public abstract ItemStack getEquippedStack(EquipmentSlot slot);
+	public LivingEntityMixin(EntityType<?> type, World world) {
+		super(type, world);
+	}
 
-	@Shadow
-	@Nullable
-	public abstract EntityAttributeInstance getAttributeInstance(EntityAttribute atribute);
+	@Inject(method = "tickMovement", at = @At("TAIL"))
+	private void modifyGlidingSpeed(CallbackInfo ci) {
+		LivingEntity self = (LivingEntity) (Object) this;
+		if (!self.isFallFlying()) {
+			return;
+		}
 
-	@Inject(at = @At("HEAD"), method = "tick", cancellable = true)
-	public void addGlidingSpeed(CallbackInfo ci) {
-		if ((EnchantmentHelper.getLevel(GeneralRegister.SOARING_ENCHANTMENT,
-				this.getEquippedStack(EquipmentSlot.CHEST)) >= 1)) {
-			this.getAttributeInstance(EntityAttributes.GENERIC_FLYING_SPEED).setBaseValue(20 + EnchantmentHelper
-					.getLevel(GeneralRegister.SOARING_ENCHANTMENT, this.getEquippedStack(EquipmentSlot.CHEST)));
+		int soaring = getEnchantmentLevel(self, GeneralRegister.SOARING_ENCHANTMENT);
+		if (soaring > 0) {
+			Vec3d look = self.getRotationVector();
+			self.setVelocity(self.getVelocity().add(look.multiply(SOARING_BOOST * soaring)));
+		}
+
+		if (getEnchantmentLevel(self, GeneralRegister.WIND_CATCHER_ENCHANTMENT) > 0) {
+			self.setVelocity(self.getVelocity().multiply(WIND_CATCHER_DRAG));
 		}
 	}
 
-	@Inject(at = @At("HEAD"), method = "tick", cancellable = true)
-	public void sustractGlidingSpeed(CallbackInfo ci) {
-		if ((EnchantmentHelper.getLevel(GeneralRegister.WIND_CATCHER_ENCHANTMENT,
-				this.getEquippedStack(EquipmentSlot.CHEST))) >= 1) {
-			this.getAttributeInstance(EntityAttributes.GENERIC_FLYING_SPEED).setBaseValue(-10 - EnchantmentHelper
-					.getLevel(GeneralRegister.WIND_CATCHER_ENCHANTMENT, this.getEquippedStack(EquipmentSlot.CHEST)));
-		}
+	private static int getEnchantmentLevel(LivingEntity entity, RegistryKey<Enchantment> key) {
+		return entity.getWorld().getRegistryManager().get(RegistryKeys.ENCHANTMENT).getEntry(key)
+				.map(enchantment -> EnchantmentHelper.getEquipmentLevel(enchantment, entity))
+				.orElse(0);
 	}
 }

@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": ["ODO", "O O", "O O"],
+  "pattern": ["ODO", "O O", "   "],
   "key": {
     "O": {
       "item": "moreorigins:oceanite"
@@ -10,7 +10,7 @@
     }
   },
   "result": {
-    "item": "moreorigins:oceanite_leggings",
+    "id": "moreorigins:oceanite_helmet",
     "count": 1
   }
 }

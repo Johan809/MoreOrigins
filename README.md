@@ -2,7 +2,7 @@
 
 ---
 
-An add-on to the [Origins](https://www.curseforge.com/minecraft/mc-mods/origins) mod. Enables 4 new origins:
+An add-on to the [Origins](https://www.curseforge.com/minecraft/mc-mods/origins) mod for Minecraft 1.21.1. Enables 5 new origins:
 
 ### Piglin Lord
 
@@ -10,7 +10,7 @@ An add-on to the [Origins](https://www.curseforge.com/minecraft/mc-mods/origins)
 >
 > 🟢 **All That Glitters:** Golden tools deal extra damage and golden armor has additional protection. Golden equipment lasts much longer, but non golden and non netherite equipment breaks faster. Netherite armor gives a small speed boost.
 >
-> 🟢 **Golden Sacrifice:** (Primary Active) Consuming a block of gold on your offhand grants you Strength II, Resistance II, and Regeneration II for 30s, 1m cooldown.
+> 🟢 **Golden Sacrifice:** (Primary Active) Consuming a block of gold on your offhand grants you Strength II, Resistance II, and Regeneration II for 1m 30s, 1m 50s cooldown.
 >
 > 🟢 **Netherite Dexterity:** As warrior lords, ancient piglins have mastered combat in armor, and wearing the best of these gives them speed as they move.
 >
@@ -122,7 +122,9 @@ An add-on to the [Origins](https://www.curseforge.com/minecraft/mc-mods/origins)
 
 ### Cave Inchling
 
-> 🟡 **Bited Size:** You are 4 times smaller than a regular person. You have 5 less hearts, 0.5 more attack speed, 0.25 less attack range, and 1 less build range.
+> Inchling who adapted to living underground, their natural abilities come to the fore in caves.
+>
+> 🟡 **Bite Sized:** You are 4 times smaller than a regular person. You have 5 less hearts, 0.5 more attack speed, 0.25 less attack range, and 1 less build range.
 >
 > 🟢 **Nimble:** You are immune to thorns and velocity based damage. You are not slowed down at all by blocks such as Sweet Berry Bushes or Cobwebs.
 >
@@ -138,13 +140,22 @@ An add-on to the [Origins](https://www.curseforge.com/minecraft/mc-mods/origins)
 >
 > 🔴 **Agoraphobia:** Being an underground creature, being outdoors is not very good for you.
 
+### Enchantments
+
+- **Soaring (I-III):** Elytra enchantment, you glide faster. Found in End City chests.
+- **Wind Catcher (I):** Elytra enchantment, you glide slower and with more control. Found in End City chests. Incompatible with Soaring.
+- **Ice Aspect (I-II):** Your sword slows down the enemies you hit.
+- **Wither Aspect (I-II):** Your sword withers the enemies you hit.
+
+Ice Aspect, Wither Aspect and Fire Aspect are incompatible with each other.
+
 ### Note:
 
-I personally recommend using a mod that shows the recipes, like [REI](https://www.curseforge.com/minecraft/mc-mods/roughly-enough-items) in Fabric.
-Oceanite (the base item for Oceanite armor) it's made out of Prismarine Shards (A), Primarine Crystals (B) and Diamonds (C), with the pattern:
-BAB
-ACA
-BAB
+I personally recommend using a mod that shows the recipes, like [REI](https://modrinth.com/mod/rei) or [EMI](https://modrinth.com/mod/emi).
+Oceanite (the base item for Oceanite armor) it's made out of Prismarine Shards (A), Prismarine Crystals (B) and an Emerald (C), with the pattern:
+ABA
+BCB
+ABA
 
 ## Download
 
@@ -152,11 +163,14 @@ The latest download, `moreorigins-X.X.X.jar`, can be found in the [releases page
 
 ## Requirements
 
+- Minecraft 1.21.1
 - [Fabric loader](https://fabricmc.net/)
 - [Fabric API](https://www.curseforge.com/minecraft/mc-mods/fabric-api)
-- [Origins](https://www.curseforge.com/minecraft/mc-mods/origins)
-- [Extra Origins](https://www.curseforge.com/minecraft/mc-mods/extra-origins)
-- [Pehkui](https://www.curseforge.com/minecraft/mc-mods/pehkui)
+- [Origins](https://www.curseforge.com/minecraft/mc-mods/origins) 1.13 or later
+
+## Building
+
+Requires Java 21. Run `./gradlew build`; the jar ends up in `build/libs`. `./gradlew runClient` starts the game with Origins installed.
 
 ## Special Thanks & Credits
 

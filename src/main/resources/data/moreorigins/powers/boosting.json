@@ -1,7 +1,7 @@
 {
-  "type": "origins:active_self",
+  "type": "origins:action_on_key_press",
   "entity_action": {
-    "type": "origins:and",
+    "type": "origins:sequence",
     "actions": [
       {
         "type": "origins:add_velocity",
@@ -9,8 +9,8 @@
         "space": "local"
       },
       {
-        "type": "origins:execute_command",
-        "command": "playsound minecraft:entity.firework_rocket.launch master @s ~ ~ ~ 1 1"
+        "type": "origins:play_sound",
+        "sound": "minecraft:entity.firework_rocket.launch"
       }
     ]
   },
@@ -20,6 +20,7 @@
   "cooldown": 60,
   "hud_render": {
     "should_render": true,
+    "sprite_location": "origins:textures/gui/resource_bar.png",
     "bar_index": 4
   },
   "key": {
