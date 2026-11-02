@@ -1,0 +1,104 @@
+{
+  "type": "origins:action_on_callback",
+  "entity_action_gained": {
+    "type": "origins:sequence",
+    "actions": [
+      {
+        "type": "origins:change_resource",
+        "resource": "moreorigins:boosting",
+        "change": -60
+      },
+      {
+        "type": "origins:change_resource",
+        "resource": "moreorigins:draconic_roar",
+        "change": -1200
+      },
+      {
+        "type": "origins:change_resource",
+        "resource": "moreorigins:dragon_breath_normal",
+        "change": -600
+      },
+      {
+        "type": "origins:change_resource",
+        "resource": "moreorigins:dragon_breath_empowered",
+        "change": -100
+      },
+      {
+        "type": "origins:change_resource",
+        "resource": "moreorigins:golden_boost",
+        "change": -2200
+      },
+      {
+        "type": "origins:change_resource",
+        "resource": "moreorigins:launch_higher",
+        "change": -400
+      },
+      {
+        "type": "origins:change_resource",
+        "resource": "moreorigins:poseidon-armor_air-breathing",
+        "change": -2400
+      },
+      {
+        "type": "origins:change_resource",
+        "resource": "moreorigins:riptide",
+        "change": -300
+      },
+      {
+        "type": "origins:change_resource",
+        "resource": "moreorigins:sugar_rush",
+        "change": -600
+      }
+    ]
+  },
+  "entity_action_chosen": {
+    "type": "origins:sequence",
+    "actions": [
+      {
+        "type": "origins:change_resource",
+        "resource": "moreorigins:boosting",
+        "change": -60
+      },
+      {
+        "type": "origins:change_resource",
+        "resource": "moreorigins:draconic_roar",
+        "change": -1200
+      },
+      {
+        "type": "origins:change_resource",
+        "resource": "moreorigins:dragon_breath_normal",
+        "change": -600
+      },
+      {
+        "type": "origins:change_resource",
+        "resource": "moreorigins:dragon_breath_empowered",
+        "change": -100
+      },
+      {
+        "type": "origins:change_resource",
+        "resource": "moreorigins:golden_boost",
+        "change": -2200
+      },
+      {
+        "type": "origins:change_resource",
+        "resource": "moreorigins:launch_higher",
+        "change": -400
+      },
+      {
+        "type": "origins:change_resource",
+        "resource": "moreorigins:poseidon-armor_air-breathing",
+        "change": -2400
+      },
+      {
+        "type": "origins:change_resource",
+        "resource": "moreorigins:riptide",
+        "change": -300
+      },
+      {
+        "type": "origins:change_resource",
+        "resource": "moreorigins:sugar_rush",
+        "change": -600
+      }
+    ]
+  },
+  "hidden": true
+}

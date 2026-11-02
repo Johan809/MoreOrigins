@@ -1,0 +1,7 @@
+{
+  "type": "origins:modify_player_spawn",
+  "dimension": "minecraft:overworld",
+  "structure": "minecraft:stronghold",
+  "name": "End Fugitive",
+  "description": "You have just escaped from the End: you spawn in a stronghold."
+}

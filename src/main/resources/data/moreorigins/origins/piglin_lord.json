@@ -11,7 +11,8 @@
     "origins:nether_spawn",
     "moreorigins:soul_spooked",
     "moreorigins:zombification",
-    "moreorigins:land_legs"
+    "moreorigins:land_legs",
+    "moreorigins:ready_cooldowns"
   ],
   "icon": { "id": "minecraft:netherite_ingot" },
   "order": 10,

@@ -2,13 +2,13 @@
 
 ---
 
-An add-on to the [Origins](https://www.curseforge.com/minecraft/mc-mods/origins) mod for Minecraft 1.21.1. Enables 5 new origins:
+An add-on to the [Origins](https://www.curseforge.com/minecraft/mc-mods/origins) mod for Minecraft 1.21.1. Enables 6 new origins:
 
 ### Piglin Lord
 
 > Natives of the Nether, Ancient piglins whose power surpasses their predecessors.
 >
-> 🟢 **All That Glitters:** Golden tools deal extra damage and golden armor has additional protection. Golden equipment lasts much longer, but non golden and non netherite equipment breaks faster. Netherite armor gives a small speed boost.
+> 🟢 **All That Glitters:** Golden tools deal extra damage and golden armor has additional protection. Golden equipment lasts much longer, but non golden and non netherite equipment breaks twice as fast (crossbows excluded).
 >
 > 🟢 **Golden Sacrifice:** (Primary Active) Consuming a block of gold on your offhand grants you Strength II, Resistance II, and Regeneration II for 1m 30s, 1m 50s cooldown.
 >
@@ -86,7 +86,7 @@ An add-on to the [Origins](https://www.curseforge.com/minecraft/mc-mods/origins)
 >
 > 🔴 **Creature from the sky:** Being a flying being, projectiles tend to do more damage than normal.
 >
-> 🔴 **Claustrophobia:** Being somewhere with a low ceiling for too long will weaken you and make you slower.
+> 🔴 **Extreme Claustrophobia:** Being underground or somewhere with a low ceiling (3 blocks or less) for too long will weaken you and make you slower.
 
 ### Atlantean
 
@@ -140,10 +140,32 @@ An add-on to the [Origins](https://www.curseforge.com/minecraft/mc-mods/origins)
 >
 > 🔴 **Agoraphobia:** Being an underground creature, being outdoors is not very good for you.
 
+### Dragonborn
+
+> Descendants of the dragons who escaped from the End. Strong and proud, the inhabitants of the End recognize them and hunt them to death.
+>
+> 🟢 **Dragon's Breath:** (Primary active) You breathe the fire of the Ender Dragon, leaving a cloud of harmful breath behind. It can be collected with bottles. 30s cooldown.
+>
+> 🟢 **Dragon Scales:** You have 4 points of natural armor, and your own dragon's breath can't hurt you.
+>
+> 🟢 **Dragon Soul:** Killing an enderman fills you with the energy of the End for 30s: you deal 2 more damage and your Dragon's Breath recharges in 5s.
+>
+> 🟢 **Dragon's Hoard:** You gain 25% more experience.
+>
+> 🟢 **Draconic Roar:** (Secondary active) Your roar pushes back the creatures around you and gives them Weakness. 1m cooldown.
+>
+> 🔴 **End Fugitive:** You have just escaped from the End: you spawn in a stronghold.
+>
+> 🔴 **Hunted by the End:** Endermen attack you on sight.
+>
+> 🔴 **Draconic Size:** You are 25% bigger, so you don't fit in spaces 2 blocks tall.
+>
+> 🔴 **Horns:** You can't wear any helmet.
+
 ### Enchantments
 
-- **Soaring (I-III):** Elytra enchantment, you glide faster. Found in End City chests.
-- **Wind Catcher (I):** Elytra enchantment, you glide slower and with more control. Found in End City chests. Incompatible with Soaring.
+- **Soaring (I-III):** Elytra enchantment, you lose altitude slower while gliding, so you can fly further. Found in End City chests.
+- **Wind Catcher (I):** Elytra enchantment for controlled flights: sneaking while gliding works as an air brake, and you take less damage from falling and from flying into walls. Found in End City chests. Incompatible with Soaring.
 - **Ice Aspect (I-II):** Your sword slows down the enemies you hit.
 - **Wither Aspect (I-II):** Your sword withers the enemies you hit.
 

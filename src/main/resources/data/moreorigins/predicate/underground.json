@@ -1,0 +1,11 @@
+{
+  "condition": "minecraft:location_check",
+  "predicate": {
+    "position": {
+      "y": {
+        "max": 50
+      }
+    },
+    "can_see_sky": false
+  }
+}

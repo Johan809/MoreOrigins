@@ -1,0 +1,37 @@
+{
+  "type": "origins:stacking_status_effect",
+  "min_stacks": -10,
+  "max_stacks": 361,
+  "duration_per_stack": 10,
+  "effects": [
+    {
+      "id": "minecraft:weakness",
+      "ambient": true,
+      "show_particles": false,
+      "show_icon": true
+    },
+    {
+      "id": "minecraft:slowness",
+      "ambient": true,
+      "show_particles": false,
+      "show_icon": true
+    }
+  ],
+  "condition": {
+    "type": "origins:any_of",
+    "conditions": [
+      {
+        "type": "origins:block_collision",
+        "offset_x": 0,
+        "offset_y": 2,
+        "offset_z": 0
+      },
+      {
+        "type": "origins:predicate",
+        "predicate": "moreorigins:underground"
+      }
+    ]
+  },
+  "name": "Extreme Claustrophobia",
+  "description": "Being underground or somewhere with a low ceiling (3 blocks or less) for too long will weaken you and make you slower."
+}

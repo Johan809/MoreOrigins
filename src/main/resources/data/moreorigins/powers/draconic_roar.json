@@ -1,0 +1,55 @@
+{
+  "type": "origins:action_on_key_press",
+  "entity_action": {
+    "type": "origins:sequence",
+    "actions": [
+      {
+        "type": "origins:play_sound",
+        "sound": "minecraft:entity.ender_dragon.growl"
+      },
+      {
+        "type": "origins:area_of_effect",
+        "radius": 6,
+        "bientity_condition": {
+          "type": "origins:target_condition",
+          "condition": {
+            "type": "origins:living"
+          }
+        },
+        "bientity_action": {
+          "type": "origins:sequence",
+          "actions": [
+            {
+              "type": "origins:add_velocity",
+              "reference": "position",
+              "z": 1.2,
+              "y": 0.4
+            },
+            {
+              "type": "origins:target_action",
+              "action": {
+                "type": "origins:apply_effect",
+                "effect": {
+                  "id": "minecraft:weakness",
+                  "duration": 200
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "cooldown": 1200,
+  "hud_render": {
+    "should_render": true,
+    "sprite_location": "origins:textures/gui/resource_bar.png",
+    "bar_index": 3
+  },
+  "key": {
+    "key": "key.origins.secondary_active",
+    "continuous": false
+  },
+  "name": "Draconic Roar",
+  "description": "(Secondary active) Your roar pushes back the creatures around you and weakens them."
+}

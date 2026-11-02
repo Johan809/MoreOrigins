@@ -1,0 +1,17 @@
+{
+  "type": "origins:self_action_on_kill",
+  "target_condition": {
+    "type": "origins:entity_type",
+    "entity_type": "minecraft:enderman"
+  },
+  "entity_action": {
+    "type": "origins:apply_effect",
+    "effect": {
+      "id": "moreorigins:dragon_soul",
+      "duration": 600,
+      "show_icon": true
+    }
+  },
+  "name": "Dragon Soul",
+  "description": "Killing an enderman fills you with the energy of the End for 30 seconds: you deal more damage and your Dragon's Breath recharges much faster."
+}

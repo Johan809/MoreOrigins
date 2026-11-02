@@ -1,0 +1,10 @@
+{
+  "type": "origins:restrict_armor",
+  "head": {
+    "type": "origins:armor_value",
+    "comparison": ">",
+    "compare_to": 0
+  },
+  "name": "Horns",
+  "description": "Your horns don't let you wear any helmet."
+}

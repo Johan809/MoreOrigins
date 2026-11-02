@@ -1,0 +1,11 @@
+{
+  "type": "origins:attribute",
+  "modifier": {
+    "id": "*:*",
+    "attribute": "minecraft:generic.scale",
+    "amount": 0.25,
+    "operation": "add_multiplied_total"
+  },
+  "name": "Draconic Size",
+  "description": "You are 25% bigger than a regular person, so you don't fit in spaces 2 blocks tall."
+}

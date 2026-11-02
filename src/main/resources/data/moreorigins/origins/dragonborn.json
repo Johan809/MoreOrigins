@@ -1,0 +1,19 @@
+{
+  "powers": [
+    "moreorigins:dragon_breath",
+    "moreorigins:dragon_scales",
+    "moreorigins:dragon_soul",
+    "moreorigins:dragons_hoard",
+    "moreorigins:draconic_roar",
+    "moreorigins:end_fugitive",
+    "moreorigins:hunted_by_the_end",
+    "moreorigins:draconic_size",
+    "moreorigins:horns",
+    "moreorigins:ready_cooldowns"
+  ],
+  "icon": { "id": "minecraft:dragon_head" },
+  "order": 15,
+  "impact": 3,
+  "name": "Dragonborn",
+  "description": "Descendants of the dragons who escaped from the End. Strong and proud, the inhabitants of the End recognize them and hunt them to death."
+}

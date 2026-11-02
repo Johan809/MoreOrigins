@@ -1,0 +1,28 @@
+{
+  "type": "origins:multiple",
+  "natural_armor": {
+    "type": "origins:attribute",
+    "modifier": {
+      "id": "*:*",
+      "attribute": "minecraft:generic.armor",
+      "amount": 4,
+      "operation": "add_value"
+    }
+  },
+  "breath_immunity": {
+    "type": "origins:modify_damage_taken",
+    "bientity_condition": {
+      "type": "origins:equal"
+    },
+    "damage_condition": {
+      "type": "origins:type",
+      "damage_type": "minecraft:indirect_magic"
+    },
+    "modifier": {
+      "operation": "multiply_total_multiplicative",
+      "amount": -1
+    }
+  },
+  "name": "Dragon Scales",
+  "description": "Your scales give you natural armor, and your own dragon's breath can't hurt you."
+}

@@ -17,5 +17,34 @@
   "slots": [
     "chest"
   ],
-  "exclusive_set": "moreorigins:soaring"
+  "exclusive_set": "moreorigins:soaring",
+  "effects": {
+    "minecraft:damage_protection": [
+      {
+        "effect": {
+          "type": "minecraft:add",
+          "value": {
+            "type": "minecraft:linear",
+            "base": 6,
+            "per_level_above_first": 6
+          }
+        },
+        "requirements": {
+          "condition": "minecraft:damage_source_properties",
+          "predicate": {
+            "tags": [
+              {
+                "id": "moreorigins:wind_catcher_protected",
+                "expected": true
+              },
+              {
+                "id": "minecraft:bypasses_invulnerability",
+                "expected": false
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
 }

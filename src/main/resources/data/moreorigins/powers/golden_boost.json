@@ -58,5 +58,5 @@
     "continuous": false
   },
   "name": "Golden Sacrifice",
-  "description": "(primary active) Sacrificing a block of gold in you off-hand gives resistance II, strength II and regeneration II"
+  "description": "(Primary active) Sacrificing a block of gold in your off-hand gives you Strength II, Resistance II and Regeneration II for 1m 30s. 1m 50s cooldown."
 }

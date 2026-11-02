@@ -8,7 +8,8 @@
     "origins:strong_arms_break_speed",
     "moreorigins:subterranean",
     "moreorigins:agoraphobia",
-    "moreorigins:sugar_rush"
+    "moreorigins:sugar_rush",
+    "moreorigins:ready_cooldowns"
   ],
   "icon": { "id": "minecraft:mossy_cobblestone" },
   "order": 14,

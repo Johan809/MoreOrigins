@@ -1,0 +1,9 @@
+{
+  "type": "origins:modify_xp_gain",
+  "modifier": {
+    "operation": "multiply_base_multiplicative",
+    "amount": 0.25
+  },
+  "name": "Dragon's Hoard",
+  "description": "Like the dragons of old, you love to hoard: you gain 25% more experience."
+}

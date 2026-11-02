@@ -123,6 +123,17 @@
       "amount": 15
     }
   },
+  "gold_affinity_tag": {
+    "type": "origins:action_on_callback",
+    "entity_action_added": {
+      "type": "origins:execute_command",
+      "command": "tag @s add moreorigins.gold_affinity"
+    },
+    "entity_action_lost": {
+      "type": "origins:execute_command",
+      "command": "tag @s remove moreorigins.gold_affinity"
+    }
+  },
   "name": "All That Glitters",
-  "description": "Golden tools deal extra damage and golden armor has additional protection. Golden equipment lasts much longer."
+  "description": "Golden tools deal extra damage and golden armor has additional protection. Golden equipment lasts much longer, but non golden and non netherite equipment breaks twice as fast."
 }

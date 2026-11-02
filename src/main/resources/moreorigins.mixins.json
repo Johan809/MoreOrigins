@@ -4,7 +4,9 @@
   "package": "net.johan809.moreorigins.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "EndermanEntityMixin",
     "IronGolemEntityMixin",
+    "ItemStackMixin",
     "LivingEntityMixin",
     "PiglinBrainMixin"
   ],

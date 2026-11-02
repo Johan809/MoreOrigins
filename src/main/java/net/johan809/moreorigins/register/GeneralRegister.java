@@ -1,9 +1,11 @@
 package net.johan809.moreorigins.register;
 
 import net.johan809.moreorigins.MoreOrigins;
+import net.johan809.moreorigins.effects.DragonSoulStatusEffect;
 import net.johan809.moreorigins.items.OceaniteItem;
 import net.johan809.moreorigins.materials.OceaniteArmorMaterial;
 import net.minecraft.enchantment.Enchantment;
+import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -19,6 +21,9 @@ public class GeneralRegister {
 	public static final Item OCEANITE_CHESTPLATE = oceaniteArmor(ArmorItem.Type.CHESTPLATE);
 	public static final Item OCEANITE_LEGGINGS = oceaniteArmor(ArmorItem.Type.LEGGINGS);
 	public static final Item OCEANITE_BOOTS = oceaniteArmor(ArmorItem.Type.BOOTS);
+
+	public static final RegistryEntry<StatusEffect> DRAGON_SOUL = Registry.registerReference(Registries.STATUS_EFFECT,
+			MoreOrigins.id("dragon_soul"), new DragonSoulStatusEffect());
 
 	// Enchantments are data-driven since 1.21, see data/moreorigins/enchantment
 	public static final RegistryKey<Enchantment> SOARING_ENCHANTMENT = enchantmentKey("soaring");
